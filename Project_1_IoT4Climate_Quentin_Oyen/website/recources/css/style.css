@@ -1,0 +1,207 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif; /* Stel de standaardlettertype in */
+    margin: 20px auto; /* Center de pagina en voeg verticale marges toe */
+    width: 90%; /* Maak de inhoud 90% van de schermbreedte */
+    background-color: #f4f4f4; /* Lichtgrijze achtergrondkleur */
+    color: #333; /* Donkere tekstkleur voor contrast */
+}
+
+/* Header and Navigation */
+.hero {
+    background: url('/recources/images/header.jpg') no-repeat center center/cover; /* Voeg een achtergrondafbeelding toe die wordt uitgerekt om te vullen */
+    color: white; /* Tekstkleur om goed zichtbaar te zijn op de achtergrond */
+    text-align: center; /* Centreer de tekst horizontaal */
+    padding: 50px 0; /* Voeg verticale ruimte boven en onder toe */
+    height: 300px; /* Stel een vaste hoogte in */
+    display: flex; /* Gebruik Flexbox voor uitlijning */
+    flex-direction: column; /* Stapelementen verticaal */
+    justify-content: center; /* Centreer inhoud verticaal */
+    align-items: center; /* Centreer inhoud horizontaal */
+}
+
+nav ul {
+    list-style: none; /* Verwijder de standaard lijststijlen */
+    display: flex; /* Gebruik Flexbox voor horizontale uitlijning */
+    justify-content: center; /* Centreer de lijstitems */
+    padding: 0; /* Verwijder standaardpadding */
+    background-color: #333; /* Donkere achtergrondkleur */
+}
+
+nav ul li {
+    margin: 0 15px; /* Voeg horizontale ruimte tussen lijstitems toe */
+}
+
+nav ul li a {
+    color: white; /* Witte tekstkleur */
+    text-decoration: none; /* Verwijder standaard onderlijning */
+    font-weight: bold; /* Maak tekst vetgedrukt */
+    padding: 10px 15px; /* Voeg padding toe rond links */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Verander achtergrondkleur bij hover */
+    border-radius: 5px; /* Voeg afgeronde hoeken toe */
+}
+
+/* Sections */
+section {
+    margin: 20px 0; /* Voeg verticale ruimte boven en onder toe */
+    padding: 20px; /* Voeg binnenruimte toe */
+    border-radius: 8px; /* Maak hoeken afgerond */
+    background-color: #fff; /* Witte achtergrondkleur */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Voeg een zachte schaduw toe */
+}
+
+section:nth-child(even) {
+    background-color: #eef; /* Lichte blauwe achtergrondkleur voor afwisseling */
+}
+
+.solutions-grid {
+    display: flex; /* Gebruik Flexbox voor een rasterindeling */
+    gap: 20px; /* Voeg ruimte tussen items toe */
+    justify-content: space-around; /* Verspreid items gelijkmatig */
+}
+
+.solutions-grid div {
+    flex: 1; /* Elk item neemt evenveel ruimte in */
+    background-color: #f9f9f9; /* Lichte grijze achtergrondkleur */
+    padding: 15px; /* Voeg binnenruimte toe */
+    text-align: center; /* Centreer tekst */
+    border-radius: 8px; /* Maak hoeken afgerond */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Voeg een zachte schaduw toe */
+}
+
+/* Contact Section Container */
+.contact-container {
+    display: flex; /* Gebruik Flexbox om elementen te ordenen */
+    align-items: center; /* Lijn elementen verticaal uit */
+    justify-content: space-between; /* Voeg ruimte toe tussen linkse en rechtse secties */
+    background-color: #d3d3d3; /* Grijze achtergrondkleur */
+    border-radius: 8px; /* Afgeronde hoeken */
+    padding: 20px; /* Voeg binnenruimte toe */
+    gap: 15px; /* Ruimte tussen de scheidingslijn en inhoud */
+    min-height: 300px; /* Stel minimale hoogte in */
+}
+
+/* Contact Section Info (Left Side) */
+.contact-info {
+    width: 45%; /* Linkse sectie neemt 45% van de breedte in */
+    text-align: right; /* Lijn tekst uit naar rechts */
+    font-family: Arial, sans-serif; /* Gebruik Arial als lettertype */
+    color: #333; /* Donkere tekstkleur */
+    display: flex; /* Gebruik Flexbox */
+    flex-direction: column; /* Stapel elementen verticaal */
+    gap: 42px; /* Ruimte tussen elementen */
+    justify-content: center; /* Centreer tekst verticaal */
+    padding: 20px; /* Voeg binnenruimte toe */
+}
+
+.contact-info p {
+    display: flex; /* Gebruik Flexbox voor tekst en pictogrammen */
+    justify-content: flex-end; /* Lijn items uit naar rechts */
+    align-items: center; /* Centreer pictogrammen verticaal */
+    font-size: 14px; /* Lettergrootte */
+    margin: 0; /* Verwijder standaard marges */
+}
+
+.contact-info p i {
+    margin-left: 10px; /* Voeg ruimte toe tussen tekst en pictogram */
+    color: #000000; /* Zwarte kleur voor pictogrammen */
+}
+
+.contact-info h2 {
+    color: #107c10; /* Groene kleur voor de titel */
+    font-size: 18px; /* Lettergrootte van de titel */
+    margin: 0 0 10px 0; /* Ruimte onder de titel */
+    text-align: right; /* Tekst uitlijnen naar rechts */
+}
+
+.contact-info a {
+    color: #107c10; /* Groene kleur voor links */
+    text-decoration: none; /* Verwijder standaard onderlijning */
+    font-size: 14px; /* Lettergrootte */
+}
+
+.contact-info .social-icons {
+    display: flex; /* Gebruik Flexbox om pictogrammen uit te lijnen */
+    justify-content: flex-end; /* Lijn pictogrammen uit naar rechts */
+    gap: 10px; /* Ruimte tussen pictogrammen */
+    margin-top: 15px; /* Voeg ruimte boven de pictogrammen toe */
+}
+
+.contact-info .social-icons i {
+    font-size: 16px; /* Grootte van pictogrammen */
+    color: #333; /* Donkere kleur voor pictogrammen */
+    cursor: pointer; /* Toon pointercursor bij hover */
+    transition: color 0.3s ease; /* Zachte kleurtransitie bij hover */
+}
+
+.contact-info .social-icons i:hover {
+    color: #107c10; /* Verander naar groen bij hover */
+}
+
+/* Vertical Divider */
+.divider {
+    width: 3px; /* Breedte van de scheidingslijn */
+    background-color: #000000; /* Zwarte kleur */
+    margin: 0 px; /* Geen extra ruimte */
+    height: auto; /* Laat de hoogte zich aanpassen */
+    align-self: stretch; /* Rek uit om de volledige hoogte te bedekken */
+}
+
+/* Contact Form (Right Side) */
+.contact-form {
+    width: 50%; /* Breedte van de rechtersectie */
+    padding: 20px; /* Voeg binnenruimte toe */
+    font-family: Arial, sans-serif; /* Gebruik Arial als lettertype */
+}
+
+.contact-form h2 {
+    color: #107c10; /* Groene kleur voor de titel */
+    margin-bottom: 20px; /* Ruimte onder de titel */
+}
+
+.contact-form .form-group {
+    display: flex; /* Gebruik Flexbox om label en invoerveld uit te lijnen */
+    align-items: center; /* Lijn label en invoerveld verticaal uit */
+    margin-bottom: 15px; /* Voeg ruimte tussen invoervelden toe */
+    border: 1px solid #ddd; /* Rand om het invoerveld */
+    border-radius: 5px; /* Afgeronde hoeken */
+    background-color: #fff; /* Witte achtergrondkleur */
+}
+
+.contact-form .form-group label {
+    padding: 10px; /* Voeg ruimte rond het label toe */
+    background-color: #107c10; /* Groene achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    border-radius: 5px 0 0 5px; /* Maak de linkerhoeken afgerond */
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    border: none; /* Verwijder standaardrand */
+    padding: 10px; /* Voeg binnenruimte toe */
+    flex: 1; /* Laat invoervelden zich aanpassen aan de resterende ruimte */
+    border-radius: 0 5px 5px 0; /* Maak de rechterhoeken afgerond */
+    font-size: 16px; /* Lettergrootte */
+}
+
+.contact-form textarea {
+    resize: none; /* Voorkom dat gebruikers de grootte van het tekstvak aanpassen */
+}
+
+.contact-form button {
+    width: 100%; /* Laat de knop de volledige breedte innemen */
+    background-color: #107c10; /* Groene achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    border: none; /* Verwijder standaardrand */
+    padding: 10px; /* Voeg binnenruimte toe */
+    font-size: 16px; /* Lettergrootte */
+    cursor: pointer; /* Toon pointercursor bij hover */
+    border-radius: 5px; /* Afgeronde hoeken */
+}
+
+.contact-form button:hover {
+    background-color: #0a5b0a; /* Donkergroene kleur bij hover */
+}
